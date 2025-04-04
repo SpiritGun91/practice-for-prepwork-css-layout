@@ -1,0 +1,157 @@
+/* Dark mode styling for the form */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #121212;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    width: 600px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+fieldset {
+    border: 1px none #333;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 0;
+}
+
+legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    color: #bb86fc; /* Purple accent color */
+}
+
+/* Style for form elements containers */
+div {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.languages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.stat-date {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.stat,
+.date {
+    width: 50%;
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #bb86fc; /* Purple accent color */
+}
+
+/* Input fields styling */
+input[type="text"],
+input[type="email"],
+select,
+textarea,
+input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+/* Radio buttons and checkboxes styling */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+    accent-color: #bb86fc; /* Purple accent color for checkbox/radio */
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+    display: inline;
+    font-weight: normal;
+    color: #e0e0e0;
+}
+
+/* Submit button styling */
+button[type="submit"] {
+    background-color: #bb86fc; /* Purple accent color */
+    color: #121212;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #a370d8;
+}
+
+/* For the paragraphs inside divs */
+div p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #bb86fc; /* Purple accent color */
+}
+
+/* For the radio buttons group */
+div:nth-child(5) input[type="radio"] + label {
+    margin-left: 5px;
+}
+
+/* For the checkbox group */
+div:nth-child(9) {
+    margin-bottom: 20px;
+}
+
+/* Focus states for better accessibility */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #03dac6; /* Teal secondary accent for focus */
+    border-color: #03dac6;
+}
+
+/* Add subtle hover effect on inputs */
+input:hover,
+select:hover,
+textarea:hover {
+    border-color: #bb86fc;
+}
